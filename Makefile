@@ -1,6 +1,6 @@
 VERSION=1.11.0
-CFLAGS+=-g -DVERSION='"$(VERSION)"' -Wall -Wextra -Werror -Wno-unused-parameter
-LDFLAGS+=-static
+CFLAGS+=-DVERSION='"$(VERSION)"'
+LDFLAGS+=
 INCLUDE+=-Iinclude
 PREFIX?=/usr/local
 _INSTDIR=$(DESTDIR)$(PREFIX)
